@@ -7,7 +7,7 @@ apt-get remove docker docker-engine docker.io containerd runc
 rm -rf /usr/share/keyrings/docker-archive-keyring.gpg
 
 # Remove Prometheous_Grafana Folder is already exists #
-rm -rf Prometheous_Grafana/
+rm -rf /home/ubuntu/Prometheous_Grafana
 
 # Update the apt package to allow to use a repository over HTTPS #
 apt-get update
