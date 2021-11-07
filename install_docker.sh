@@ -1,7 +1,13 @@
 # Reference  - https://docs.docker.com/engine/install/ubuntu/ #
 set -x
 # Uninstall Docker if any previous installation exist #
-apt-get remove docker docker-engine docker.io containerd runc
+# apt-get remove docker docker-engine docker.io containerd runc
+
+apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
+apt-get autoremove -y --purge docker-engine docker docker.io docker-ce  
+rm -rf /var/lib/docker /etc/docker
+rm /etc/apparmor.d/docker
+rm -rf /var/run/docker.sock
 
 # remove key file if exist from previous installations #
 rm -rf /usr/share/keyrings/docker-archive-keyring.gpg
