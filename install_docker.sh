@@ -8,6 +8,7 @@ rm -rf /usr/share/keyrings/docker-archive-keyring.gpg
 
 # Remove Prometheous_Grafana Folder is already exists #
 rm -rf /home/ubuntu/Prometheous_Grafana
+rm -rf /home/ubuntu/prometheous
 
 # Update the apt package to allow to use a repository over HTTPS #
 apt-get update
