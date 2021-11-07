@@ -23,6 +23,9 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
+# Install Stress Module to Test Alerts while putting load on the containers #
+apt install stress
+
 # Check docker service and Swarm #
 
 docker ps
