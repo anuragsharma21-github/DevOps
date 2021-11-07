@@ -30,4 +30,5 @@ apt install stress
 # Check docker service and Swarm #
 
 docker ps
+docker swarm init
 docker service ls
